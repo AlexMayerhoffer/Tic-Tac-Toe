@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="code.js" defer></script>
+  <title>Tic-Tac-Toe</title>
+</head>
+<body>
+  <div id="score_board">
+    <h1>SCORE</h1>
+    <h2 id="player_score"></h2>
+    <h2 id="computer_score"></h2>
+  </div>
+
+  <div class="board_wrapper">
+    <div class="board_cell" id="cell_1" onclick="gameController.nextTurn(0)"></div>
+    <div class="board_cell" id="cell_2" onclick="gameController.nextTurn(1)"></div>
+    <div class="board_cell" id="cell_3" onclick="gameController.nextTurn(2)"></div>
+    <div class="board_cell" id="cell_4" onclick="gameController.nextTurn(3)"></div>
+    <div class="board_cell" id="cell_5" onclick="gameController.nextTurn(4)"></div>
+    <div class="board_cell" id="cell_6" onclick="gameController.nextTurn(5)"></div>
+    <div class="board_cell" id="cell_7" onclick="gameController.nextTurn(6)"></div>
+    <div class="board_cell" id="cell_8" onclick="gameController.nextTurn(7)"></div>
+    <div class="board_cell" id="cell_9" onclick="gameController.nextTurn(8)"></div>
+  </div>
+
+  <h1 id="current_turn"></h1>
+</body>
+</html>

@@ -1,0 +1,36 @@
+body {
+  display: grid;
+  grid-template: 1fr / 1fr 1fr 1fr;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#score_board {
+  place-self: center;
+}
+
+#current_turn {
+  place-self: center;
+}
+
+.board_wrapper {
+  display: grid;
+  grid-column: 2 / 3;
+  aspect-ratio: 1;
+  align-self: center;
+  grid-template: repeat(3,1fr) / repeat(3, 1fr);
+}
+
+.board_cell {
+  text-align: center;
+  background-color: rgb(211, 211, 211);
+  border: 1px solid black;
+  font-size: 3rem;
+  display: grid;
+  place-content: center;
+}
+
+.board_cell:hover {
+  background-color: rgb(171, 171, 171);
+}
